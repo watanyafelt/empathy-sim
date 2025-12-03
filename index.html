@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empathy Agent Training Simulation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Empathy Agent Training Simulation</h2>
+
+    <div id="scenario-select">
+        <label>Select Scenario:</label>
+        <select id="scenario">
+            <option value="loss">Loss</option>
+            <option value="leave">Going on Leave</option>
+            <option value="return">Returning from Leave</option>
+        </select>
+        <button id="start-btn">Start Simulation</button>
+    </div>
+
+    <div id="chat" class="hidden"></div>
+
+    <div id="input-area" class="hidden">
+        <input type="text" id="agent-input" placeholder="Type your response as the agent..." />
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
